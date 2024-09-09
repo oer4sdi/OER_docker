@@ -1,10 +1,10 @@
-# Das AAA-Datenmodell
+# Docker 
 
-Das AAA-Datenmodell, das in dieser Lerneinheit vorgestellt wird, ist ein wichtiger Bestandteil im Bereich der Datenverwaltung und -analyse. Diese videobasierte Lerneinheit bietet eine Einführung in das Modell und ermöglicht es den Teilnehmern, erste praktische Erfahrungen im Umgang mit den Daten zu sammeln.
+Der Kurs erklärt die Nutzung von Docker zur Bereitstellung und Skalierung von Anwendungen in geografischen Informationssystemen (GIS). Docker ermöglicht das Erstellen isolierter Umgebungen, sogenannte Container, die unabhängig vom Betriebssystem laufen. Diese Container erleichtern die Entwicklung, Bereitstellung und das Experimentieren mit GIS-Tools und Daten. Es wird gezeigt, wie man mit Docker eine einheitliche Softwareumgebung für Webdienste und Analyseplattformen wie Jupyter Notebook schafft, um räumliche Analysen effizient und ohne umfangreiche Softwareinstallationen durchzuführen. Docker sorgt so für eine konsistente und flexible Arbeitsumgebung im GIS-Bereich.
 
 ## Nutzung
 
-Der Kursinhalt, der normalerweise auf einem Learning Management System (LMS) gehostet wird, ist im OER_AAA.md gespiegelt. Zusätzliche Inhalte finden Sie im Verzeichnis /files. Hier finden sie die Lerneinheit auf [OpenRUB](https://open.ruhr-uni-bochum.de/de/lernangebot/das-aaa-datenmodell).
+Der Kursinhalt, der normalerweise auf einem Learning Management System (LMS) gehostet wird, ist im OER_Docker.md gespiegelt. Zusätzliche Inhalte finden Sie im Verzeichnis /files. Hier finden sie die Lerneinheit auf [OpenRUB](https://open.ruhr-uni-bochum.de/de/lernangebot/das-aaa-datenmodell).
 
 ## Lizenz
 
