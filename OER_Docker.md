@@ -3,56 +3,53 @@
 
 ### Was ist Docker und wo findet es in Spatial Information Infrastructures (SDI) Anwendung?
 
-Docker ist eine Plattform, die Anwendungen in isolierten Containern bereitstellt, inklusive aller Abhängigkeiten. 
-In **Spatial Data Infrastructures (SDI)** wird Docker genutzt, um geographische Anwendungen wie QGIS, GeoServer oder Jupyter Notebooks einfach und konsistent zu installieren. 
-Dadurch lassen sich komplexe Umgebungen schnell bereitstellen und unabhängig vom Host-System betreiben, was die Verwaltung und Skalierbarkeit erleichtert.
-
-## Aber was genau ist jetzt Docker?
-
 Docker ist eine leistungsstarke Container-Plattform, die es ermöglicht, Anwendungen in isolierten Umgebungen zu betreiben. Dies ist besonders hilfreich, wenn Anwendungen gleiche Software-Voraussetzungen benötigen. Ein Docker-Container enthält alle nötigen Abhängigkeiten, Bibliotheken und Software, die für den Betrieb einer Anwendung erforderlich sind.
+> [!NOTE]
+> In **Spatial Data Infrastructures (SDI)** wird Docker genutzt, um geographische Anwendungen wie QGIS, GeoServer oder Jupyter Notebooks einfach und konsistent zu installieren. 
+Dadurch lassen sich komplexe Umgebungen schnell bereitstellen und unabhängig vom Host-System betreiben, was die Verwaltung und Skalierbarkeit erleichtert.
 
 ### Docker-Grundlagen: Dockerfile, Docker Image und Container
 
-Damit Anwendungen auf jedem Endgerät problemlos laufen, sind einige technische Voraussetzungen notwendig. Docker ist ein Open-Source-Tool, das es ermöglicht, Anwendungen in **isolierten Containern** auszuführen. Diese **Container** enthalten alles, was die Anwendung benötigt – Code, Laufzeit, Bibliotheken und Konfigurationen – und sorgen dafür, dass sie unabhängig vom Host-System - dem Endgerät - einheitlich funktioniert.
-**Container** basieren auf **Docker Images**, die als Vorlage oder Bausatz dienen und alle notwendigen Elemente enthalten. Die Erstellung eines **Docker Images** erfolgt über eine **Dockerfile**, eine einfache Textdatei, die Anweisungen und Befehle enthält. Docker erleichtert so die Entwicklung, Bereitstellung und Skalierung von Software auf verschiedenen Systemen.
+Damit Anwendungen auf jedem Endgerät problemlos laufen, sind einige technische Voraussetzungen notwendig. Docker ist ein Open-Source-Tool, das es ermöglicht, Anwendungen in `isolierten Containern` auszuführen. Diese `Container` enthalten alles, was die Anwendung benötigt – Code, Laufzeit, Bibliotheken und Konfigurationen – und sorgen dafür, dass sie unabhängig vom Host-System - dem Endgerät - einheitlich funktioniert.
+` Container` basieren auf `Docker Images`, die als Vorlage oder Bausatz dienen und alle notwendigen Elemente enthalten. Die Erstellung eines `Docker Images` erfolgt über eine `Dockerfile`, eine einfache Textdatei, die Anweisungen und Befehle enthält. Docker erleichtert so die Entwicklung, Bereitstellung und Skalierung von Software auf verschiedenen Systemen.
 
-**Selbsttest: Docker Grundlagen**
+
+**Selbsttest 1: Docker Grundlagen**
 
 **Frage 1:** Wofür wird Docker primär genutzt?
 
-() a. Zum Erstellen von virtuellen Maschinen  
-(x) b. Zur Erstellung isolierter Container, die Softwareumgebungen enthalten  
-() c. Zur Verwaltung von Netzwerken  
-() d. Zum Schreiben von Programmen  
+- [ ] a. Zum Erstellen von virtuellen Maschinen  
+- [x] b. Zur Erstellung isolierter Container, die Softwareumgebungen enthalten  
+- [ ] c. Zur Verwaltung von Netzwerken  
+- [ ] d. Zum Schreiben von Programmen  
 
 **Frage 2:** Welche Funktion erfüllt Docker beim Betrieb von Geoservern?
 
-() a. Es sorgt für bessere Datenvisualisierung  
-(x) b. Es stellt sicher, dass der Geoserver von unterschiedlichen Systemen erreichbar ist  
-() c. Es ermöglicht es, Webdienste im Netzwerk zugänglich zu machen  
-() d. Es führt automatische Software-Updates durch  
+- [ ] a. Es sorgt für bessere Datenvisualisierung  
+- [x] b. Es stellt sicher, dass der Geoserver von unterschiedlichen Systemen erreichbar ist  
+- [ ] c. Es ermöglicht es, Webdienste im Netzwerk zugänglich zu machen  
+- [ ] d. Es führt automatische Software-Updates durch  
 
 **Frage 3:** Was ist ein Docker Image?
 
-() a. Ein Container, der läuft  
-() b. Eine virtuelle Maschine  
-(x) c. Eine Vorlage, die Anweisungen für die Erstellung von Containern enthält  
-() d. Ein Netzwerk-Tool  
+- [ ] a. Ein Container, der läuft  
+- [ ] b. Eine virtuelle Maschine  
+- [x] c. Eine Vorlage, die Anweisungen für die Erstellung von Containern enthält  
+- [ ] d. Ein Netzwerk-Tool  
 
 **Frage 4:** Was ist ein Docker Container?
 
-(x) a. Eine isolierte Instanz, die auf einem Docker Image basiert  
-() b. Eine Software, die Netzwerke verwaltet  
-() c. Eine Anwendung zum Verwalten von Code  
-() d. Eine virtuelle Maschine  
+- [x] a. Eine isolierte Instanz, die auf einem Docker Image basiert  
+- [ ] b. Eine Software, die Netzwerke verwaltet  
+- [ ] c. Eine Anwendung zum Verwalten von Code  
+- [ ] d. Eine virtuelle Maschine  
 
 **Frage 5:** Was passiert beim Befehl *docker build* im Zusammenhang mit einem Docker file?
 
-() a. Es wird eine virtuelle Maschine erstellt  
-() b. Es wird ein Docker Container gestartet  
-(x) c. Es wird ein Docker Image erzeugt  
-() d. Es wird eine neue Netzwerkkonfiguration eingerichtet  
-
+- [ ] a. Es wird eine virtuelle Maschine erstellt  
+- [ ] b. Es wird ein Docker Container gestartet  
+- [x] c. Es wird ein Docker Image erzeugt  
+- [ ] d. Es wird eine neue Netzwerkkonfiguration eingerichtet  
 ___
 # Praktische Anwendung: Docker für Jupyter Notebook
 
@@ -74,11 +71,14 @@ Ergänzt werden diese durch räumliche Daten, etwa die Staatsgrenzen aus dem Dat
 Nach dem Import beider Datensätze können sie durch den Befehl pd.merge kombiniert und anschließend als Karte visualisiert werden. 
 Docker sorgt hierbei dafür, dass alle benötigten Tools ohne manuelle Installation einsatzbereit sind.
 
+WHO COVID-19 Data          |  Natural Earth Datensatz
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/29573a76-ed92-4def-97bd-68687b826a4c)  |  ![](https://github.com/user-attachments/assets/92919e07-8071-4c73-a77c-ab790b1d9368)
 
-![1](https://github.com/user-attachments/assets/29573a76-ed92-4def-97bd-68687b826a4c)
-![2](https://github.com/user-attachments/assets/92919e07-8071-4c73-a77c-ab790b1d9368)
-![3](https://github.com/user-attachments/assets/58cf8700-9886-42b8-a2fe-4faad3475547)
-![4](https://github.com/user-attachments/assets/5d8263a4-da28-4616-bc88-7255e3a886fe)
+merging dataset          |  Plot of COVID-19 and natural earth data
+:-------------------------:|:-------------------------:
+![](https://github.com/user-attachments/assets/b837d404-314b-4f2a-8436-0bcee6fbb169)  |  ![](https://github.com/user-attachments/assets/5d8263a4-da28-4616-bc88-7255e3a886fe)
+
 
 
 ### Selbsttest Part 2
@@ -86,24 +86,24 @@ Docker sorgt hierbei dafür, dass alle benötigten Tools ohne manuelle Installat
 
 **Frage 1:** Was ist der Vorteil von Docker beim Einsatz von Jupyter Notebook / Jupyter Lab?
 
-() a. Es ermöglicht eine schnellere Datenverarbeitung  
-(x) b. Es stellt sicher, dass alle nötigen Module zur Verfügung stehen, ohne sie manuell zu installieren  
-() c. Es erhöht die Sicherheit von Jupyter Notebook  
-() d. Es verbessert die Visualisierung der Daten  
+- [ ] a. Es ermöglicht eine schnellere Datenverarbeitung  
+- [x] b. Es stellt sicher, dass alle nötigen Module zur Verfügung stehen, ohne sie manuell zu installieren  
+- [ ] c. Es erhöht die Sicherheit von Jupyter Notebook  
+- [ ] d. Es verbessert die Visualisierung der Daten  
 
 **Frage 2:** Welcher Befehl lädt das Docker-Image für die räumliche Analyse?
 
-() a. `docker run darribas/gds_py:10.0`  
-() b. `docker build darribas/gds_py:10.0`  
-(x) c. `docker pull darribas/gds_py:10.0`  
-() d. `docker start darribas/gds_py:10.0`  
+- [ ] a. `docker run darribas/gds_py:10.0`  
+- [ ] b. `docker build darribas/gds_py:10.0`  
+- [x] c. `docker pull darribas/gds_py:10.0`  
+- [ ] d. `docker start darribas/gds_py:10.0`  
 
 **Frage 3:** Welche Module sind notwendig, um geographische Daten in Jupyter Notebook zu verarbeiten?
 
-() a. numpy und scipy  
-(x) b. pandas und geopandas  
-() c. matplotlib und seaborn  
-() d. flask und django  
+- [ ] a. numpy und scipy  
+- [x] b. pandas und geopandas  
+- [ ] c. matplotlib und seaborn  
+- [ ] d. flask und django  
 
 ## Evaluation und Abschluss
 
