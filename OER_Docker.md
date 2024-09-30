@@ -10,9 +10,11 @@ Dadurch lassen sich komplexe Umgebungen schnell bereitstellen und unabhängig vo
 
 ### Docker-Grundlagen: Dockerfile, Docker Image und Container
 
+
 Damit Anwendungen auf jedem Endgerät problemlos laufen, sind einige technische Voraussetzungen notwendig. Docker ist ein Open-Source-Tool, das es ermöglicht, Anwendungen in `isolierten Containern` auszuführen. Diese `Container` enthalten alles, was die Anwendung benötigt – Code, Laufzeit, Bibliotheken und Konfigurationen – und sorgen dafür, dass sie unabhängig vom Host-System - dem Endgerät - einheitlich funktioniert.
 ` Container` basieren auf `Docker Images`, die als Vorlage oder Bausatz dienen und alle notwendigen Elemente enthalten. Die Erstellung eines `Docker Images` erfolgt über eine `Dockerfile`, eine einfache Textdatei, die Anweisungen und Befehle enthält. Docker erleichtert so die Entwicklung, Bereitstellung und Skalierung von Software auf verschiedenen Systemen.
 
+<video src='[your URL here](https://av.tib.eu/media/68592)' width=180/></video>
 
 **Selbsttest 1: Docker Grundlagen**
 
