@@ -14,7 +14,9 @@ Dadurch lassen sich komplexe Umgebungen schnell bereitstellen und unabhängig vo
 Damit Anwendungen auf jedem Endgerät problemlos laufen, sind einige technische Voraussetzungen notwendig. Docker ist ein Open-Source-Tool, das es ermöglicht, Anwendungen in `isolierten Containern` auszuführen. Diese `Container` enthalten alles, was die Anwendung benötigt – Code, Laufzeit, Bibliotheken und Konfigurationen – und sorgen dafür, dass sie unabhängig vom Host-System - dem Endgerät - einheitlich funktioniert.
 ` Container` basieren auf `Docker Images`, die als Vorlage oder Bausatz dienen und alle notwendigen Elemente enthalten. Die Erstellung eines `Docker Images` erfolgt über eine `Dockerfile`, eine einfache Textdatei, die Anweisungen und Befehle enthält. Docker erleichtert so die Entwicklung, Bereitstellung und Skalierung von Software auf verschiedenen Systemen.
 
-[![Docker - schnell erklärt](https://raw.githubusercontent.com/username/repository/branch/path/to/thumbnail.jpg)](https://av.tib.eu/media/68592)
+[//]: # (Video-embedding und hochladen: Videos können entweder, wie in der nächsten Zeile exemplarisch zu sehen, verlinkt werden, oder direkt hochgeladen werden. Für direktes Hochladen sieht die Syntax in etwa so aus: <video src="https:videolink.mp4"></video>)
+[![Docker - schnell erklärt!](https://github.com/user-attachments/assets/198489d5-0acd-425a-bb36-4427b44cfa8c)](https://av.tib.eu/media/68592)
+
 
 **Selbsttest 1: Docker Grundlagen**
 
@@ -57,6 +59,8 @@ ___
 
 **Jupyter Notebook** (bzw. Jupyter Lab) ist eine web-basierte Programmierumgebung, die sich für die geographische Datenanalyse mit Python eignet. **Docker ermöglicht es, Jupyter mit allen notwendigen Modulen zur räumlichen Analyse in einem Container zu installieren.** Beispielsweise kann das Docker-Image `darribas/gds_py:10.0` verwendet werden, um eine komplette Umgebung für die geographische Analyse einzurichten.
 #### [Docker Image Darribas](https://hub.docker.com/r/darribas/gds_py)
+
+[![Docker - Ein Praxisbeispiel mit Jupyter Notebook!](https://github.com/user-attachments/assets/9c201f4c-5791-4ad6-8c94-2e26968b17f2)](https://av.tib.eu/media/68594)
 
 
 ### Beispielprojekt: Visualisierung von COVID-19-Fällen
